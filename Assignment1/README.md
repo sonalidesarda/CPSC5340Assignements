@@ -1,4 +1,5 @@
-Assignment 1 -- Page Scrape to SOLR
+**Assignment 1 -- Page Scrape to SOLR
+**
 For this assignment, I worked with Amazon product reviews. We had already downloaded approximately 500 product detail pages for movies, which were stored in the pages directory.
 
 In this assignment, I did the following:
