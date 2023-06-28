@@ -1,0 +1,17 @@
+<h1>Search results</h1>
+
+<style type="text/css">
+	table, th, td { border: 1px solid black;}
+</style>
+	
+<table>
+<tr><th>Name</th><th>Score</th><th>Summary</th><th>Details</th></tr>
+{% for doc in res %}
+<tr>
+<td>{{doc['productName']}}</td>
+<td>{{doc['reviewScore']}}</td>
+<td>{{doc['reviewSummary']}}</td>
+<td><a href="{{url_for('idLookup', reviewid=doc['id'])}}">Details</a></td>
+</tr>
+{% endfor %}
+</table>
